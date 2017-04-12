@@ -33,7 +33,20 @@ body {
   width: 100%;
 }
 
-
+/* thumbnail */
+section.thumbnails {
+  display: flex;
+  flex-flow: row wrap;
+}
+section.thumbnails figure {
+  margin: 0 5px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+img.thumbnail {
+  height: 100px;
+}
 
 
 /* draggable */

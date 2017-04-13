@@ -7,6 +7,10 @@ window.onload = function() {
 core.switchCompare = function() {
   $('.thumbnail').on('click', function(e) {
     e.preventDefault();
+    if ($('.onShow').length > 0 ) {
+      $('.onShow').removeClass('onShow')
+    }
+
     var src = e.target.src
     var caption = e.target.nextElementSibling.innerHTML
 
@@ -18,6 +22,7 @@ core.switchCompare = function() {
     var id = e.target.id
 
     var section = $('.' + id)[0]
-    $(section).css('display', 'block')
+    // $(section).css('display', 'block')
+    $(section).toggleClass('onShow')
 	});
 }

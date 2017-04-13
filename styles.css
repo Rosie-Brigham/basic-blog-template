@@ -2,6 +2,17 @@ h1, h2 {
   text-align: center;
 }
 
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40vh 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
 body {
   height: 100%;
   font-size: 18px;
@@ -14,7 +25,7 @@ body {
 .jumbotron {
   margin-bottom: 30px;
   background-image: url("images/banner2.jpg");
-  height: 70vh;
+  height: 100vh;
   min-height: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -31,7 +42,7 @@ body {
 
 /* Image styling */
 #spectrum {
-  margin: 0 25%;
+  margin: 0 auto;
 }
 
 /* thumbnail */
@@ -51,6 +62,16 @@ img.thumbnail {
 }
 section.thumbnails figcaption {
   padding-top: 5px;
+}
+
+
+/*description*/
+div.description {
+  text-align: center;
+}
+
+div.description section {
+  display: none;
 }
 
 

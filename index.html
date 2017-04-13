@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="jumbotron fixed-bg cd-bg-1">
-    <!-- <img src="./images/banner.jpg" /> -->
+    <h1>Multispectral imaging of paintings</h1>
   </div>
 
 <section class="scrolling-bg cd-color-2">
@@ -18,19 +18,18 @@
   <div class="container">
     <div class="row">
       <div class="twelve columns">
-        <h1>The main title</h1>
       </div>
     </div>
 
-    <!-- columns should be the immediate child of a .row -->
     <div class="row">
       <div class="twelve columns">
         <p>
-          You can learn a lot about a painting by simply taking photographs with different types of light.
+          <strong>You can learn a lot about a painting by simply taking photographs with different types of light.</strong>
           <br/>
+          <br />
 
-          Visible light sits within the <strong>electromagnetic spectrum</strong>. This is a contnuous range of wavelengths
-          that ecompass different types of radiation, from very high energy, short wavelength gamma radiation down to low energy, long wavelength
+          Visible light sits within the <a href="https://www.youtube.com/watch?v=PVPwGsaHups" target="_blank"><strong>electromagnetic spectrum</strong></a>.
+          This is a contnuous range of wavelengths that ecompass different types of radiation, from very high energy, short wavelength gamma radiation down to low energy, long wavelength
           microwave and radio waves.
           <br/>
           The image below shows where visible light sits on the electromagnetic spectrum; different colours
@@ -39,20 +38,17 @@
           <br/>
 
           <figure>
-            <img id="spectrum" src="images/fuckit.png" />
+            <img id="spectrum" src="images/em_spec.jpg" />
           </figure>
 
           <h3>So how does this help analyse paintings?</h3>
 
-
-          Lorem ipsum dolor sit amet, ut sumo copiosae vivendum ius. Affert veritus no mel, per graeci euismod id,
-           mei cu prompta gloriatur. Ius ad nobis efficiantur, ne iusto semper aliquando sea, ne veniam
-           necessitatibus sed. Usu ex idque nemore scriptorem. Rebum atqui nulla duo ex.
-
-          Et ignota aperiri volumus eum, et vis iudico verear. Ut alia ignota semper vix, fugit
-          lobortis est ne. Dolore oporteat duo no, dolores assueverit efficiantur est ad, zril
-          partiendo no nec. Amet argumentum theophrastus nec id, vis aeterno offendit disputationi an.
-          Habeo splendide ei duo.
+          This is where <strong>multispectral imaging</strong> comes in. This  invovles
+          taking a variety of pictures of the same object using the different types of frequencies across the
+          electromagnetic spectrum. The wavelengths can be separated by filters that
+          are sensitive to particular wavelengths. Different types of paint and pigments react differently
+          in different types of light, by comparing a set of images taken with light of different energies
+          we can make some interesting assements as to the history and makeup of the painting.
 
           <br/>
           </br/>
@@ -61,63 +57,47 @@
       </div>
     </div>
 
-    <!-- <div class="row">
-      <div class="five columns">
-        <img src="http://placehold.it/300x300"/>
-      </div>
-      <div class="seven columns">
-        Lorem ipsum dolor sit amet, ut sumo copiosae vivendum ius. Affert veritus no mel, per graeci euismod id,
-         mei cu prompta gloriatur. Ius ad nobis efficiantur, ne iusto semper aliquando sea, ne veniam
-         necessitatibus sed. Usu ex idque nemore scriptorem. Rebum atqui nulla duo ex.
-
-        Et ignota aperiri volumus eum, et vis iudico verear. Ut alia ignota semper vix, fugit
-        lobortis est ne. Dolore oporteat duo no, dolores assueverit efficiantur est ad, zril
-        partiendo no nec. Amet argumentum theophrastus nec id, vis aeterno offendit disputationi an.
-        Habeo splendide ei duo.
-      </div>
-    </div> -->
-
     <div class="row">
       <div class="twelve columns">
-        <h2>A subheading</h2>
+        <h3>Try it yourself!</h3>
 
         <p>
-          See the changes in the painting across the different multispectral images. Click on a thumbnail below to compare
-          against an image of the painting taken with visible light. Drag the button across the painting to compare the images
+          See the changes in the painting across the different multispectral images. Click on a thumbnail below to drag
+          the red button across the painting to compare the images against one taken with normal visible light.
         </p>
 
 
         <section class="thumbnails">
           <figure>
-            <img id="uv" class="thumbnail" src="images/ir_830.jpg"/>
+            <img id="IR8" class="thumbnail" src="images/ir_830.jpg"/>
             <figcaption>Infrared (830nm)</figcaption>
           </figure>
           <figure>
-            <img class="thumbnail" src="images/ir-1000.jpg"/>
+            <img id="IR1" class="thumbnail" src="images/ir-1000.jpg"/>
             <figcaption>Infrared (1000nm)</figcaption>
           </figure>
           <figure>
-            <img class="thumbnail" src="images/ir-fc.jpg"/>
+            <img id="IRFC" class="thumbnail" src="images/ir-fc.jpg"/>
             <figcaption>Infrared false colour</figcaption>
           </figure>
           <figure>
-            <img id="foo" class="thumbnail" src="images/raking.jpg"/>
+            <img id="RAK" class="thumbnail" src="images/raking.jpg"/>
             <figcaption>Raking light</figcaption>
           </figure>
           <figure>
-            <img class="thumbnail" src="images/uv-fl.jpg"/>
+            <img id="UVFL" class="thumbnail" src="images/uv-fl.jpg"/>
             <figcaption>UV flourescence</figcaption>
           </figure>
           <figure>
-            <img class="thumbnail" src="images/uv-ref.jpg"/>
+            <img id="UVR" class="thumbnail" src="images/uv-ref.jpg"/>
             <figcaption>UV reflectance</figcaption>
           </figure>
           <figure>
-            <img class="thumbnail" src="images/uv-fc.jpg"/>
+            <img id="UVFC" class="thumbnail" src="images/uv-fc.jpg"/>
             <figcaption>UV false colour</figcaption>
           </figure>
           <figure>
-            <img class="thumbnail" src="images/trans.jpg"/>
+            <img id="TRA" class="thumbnail" src="images/trans.jpg"/>
             <figcaption>Transmitted light</figcaption>
           </figure>
         </section>
@@ -132,7 +112,7 @@
 
         	<div class="cd-resize-img"> <!-- the resizable image on top -->
         		<img id="original-image" src="images/vis.jpg" alt="Modified Image">
-        		<span class="cd-image-label" data-type="modified">modified</span>
+        		<span id="modified" class="cd-image-label" data-type="modified">modified</span>
         	</div>
 
         	<span class="cd-handle"></span> <!-- slider handle -->
@@ -140,6 +120,110 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="two columns"></div>
+      <div class="eight columns description">
+        <section class="IR8">
+          <h3>Infra red (830nm)</h3>
+          <p>
+            Infra red has a lower frequency than visible light and it can penetrates deeper into the painting which means
+            that IR images can reveal the under drawing and underlayers of paintings.
+            In this case, it has allowed us to see the detail underneath the cracked as discoloured varnish
+            on the girls dress and hair.
+          </p>
+          <p>
+            <a href="https://www.nationalgallery.org.uk/paintings/glossary/infrared" target="_blank">Find out more about infra red</a>
+          </p>
+        </section>
+
+        <section class="IR1">
+          <h3>Infra red (1000nm)</h3>
+          <p>
+            Infra red has a lower frequency than visible light and it can penetrates deeper into the painting which means
+            that IR images can reveal the under drawing and underlayers of paintings.
+
+            1000 nm (nanometers) is a lower frequency still than 830 nm, which is why there is slightly more
+            detail in this image than the previous one.
+          </p>
+          <p>
+            <a href="https://www.nationalgallery.org.uk/paintings/glossary/infrared" target="_blank">Find out more about infra red</a>
+          </p>
+        </section>
+
+        <section class="IRFC">
+          <h3>Infra red false colour</h3>
+          <p>
+            False colour images are created by splitting a picture taken in visible light into its three different red green blue channels.
+            The red channel is then deleted and replaced by an infra red image. When combined back together this creates an interesting visual image
+            which will highlight details that can only be observed with infra red.
+
+            The lips and tips of the girls fingers appear orange in this image and pink under UV, this indicates the artist
+            used a pigment called <a href="http://www.webexhibits.org/pigments/indiv/overview/carmine.html" target="_blank">carmine lake</a>.
+          </p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/False_color" target="_blank">Find out more about false colour images</a>
+          </p>
+        </section>
+
+        <section class="RAK">
+          <h3>Raking light</h3>
+          <p>
+            This is when the painting is illuminated from one side, at an extreme angle to the surface.
+            This reveals the texture of the surface, as raised areas of paint are highglights and create shadow.
+
+            This image allows you to see the cracking above the girls image an hair, as well as the thick paint layer that
+            was used to create her sleeve. At the top of her shoulder a section of white paint appears to have flaked away, a fact
+            not obvious in any of the other images
+          </p>
+        </section>
+
+        <section class="UVF">
+          <h3>UV Flourescence</h3>
+          <p>
+            UV images are paticularly useful for analysing the varnish layers of paintings.
+
+            On exposure to high energy ultra violet light, some materials will flouresce. Traditional and popular varnishes like
+            mastic and dammar give off a greenish colour. New varnishes will not flouresce as much, and so will appear darker
+            as they prevent. Dyes, especially red ones, flouresce quite strongly in UV light. Can you spot any areas where a red dyes
+            may have been used?
+          </p>
+          <p>
+            <a href="https://www.nationalgallery.org.uk/paintings/glossary/ultraviolet-fluorescence" target="_blank">Find out more about false colour images</a>
+          </p>
+        </section>
+
+        <section class="UVR">
+          <h3>UV Reflectance</h3>
+          <p>
+            UV reflectance is records the radiation that is reflected back from the painting when it is illuminated with an ultraviolet light.
+            New varnish layers will reflect darker, which means touch ups to the painting are much more visible in this light. Can you
+            area of the girls nose that has been restored?
+          </p>
+        </section>
+
+        <section class="UVFC">
+          <h3>UV False colour</h3>
+          <p>
+            This is similar to Infra red false colour, except instead of replacing the red channel with IR, the blue channel is replaced with
+            UV reflectance.
+          </p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/False_color" target="_blank">Find out more about false colour images</a>
+          </p>
+        </section>
+
+        <section class="TRA">
+          <h3>Transmitted light</h3>
+          <p>
+            This effect is created when the light source is place behind the canvas.
+            This shows where the paint layer is weakest and, in this case, where any significant losses or
+            holes are in the canvas. In this case, there are several areas across the painting
+            which need to be patched up!
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="two columns"></div>
   </div>
   </section>
 

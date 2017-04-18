@@ -11,9 +11,9 @@ h1 {
 }
 
 h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   text-align: center;
+  font-weight: bold;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 .jumbotron {
   margin-bottom: 30px;
   background-image: url("images/banner2.jpg");
-  height: 100vh;
+  height: 80vh;
   min-height: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -54,14 +54,14 @@ section.thumbnails {
   flex-flow: row wrap;
 }
 section.thumbnails figure {
-  margin: 0 5px 30px;
+  margin: 0px 30px 30px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 20%;
+  width: 24%;
 }
-img.thumbnail {
-  height: 150px;
+figure a.thumbnail img {
+  height: 100px;
 }
 section.thumbnails figcaption {
   padding-top: 5px;
@@ -71,6 +71,7 @@ section.thumbnails figcaption {
 /*description*/
 div.description {
   text-align: center;
+  padding: 0 20% ;
 }
 
 div.description section {
@@ -85,7 +86,7 @@ div.description section.onShow {
 /* draggable */
 .cd-image-container {
   position: relative;
-  width: 90%;
+  width: 115%;
   max-width: 768px;
   margin: 0em auto;
 }
@@ -96,7 +97,7 @@ div.description section.onShow {
 .cd-image-label {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 65px;
   color: #ffffff;
   padding: 1em;
   -webkit-font-smoothing: antialiased;
